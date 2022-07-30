@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head >
+<head><style>h1{
+color:indigo;
+background-color:yellow;
+font-size:15pt;
+font-family: 'Times New Roman';
+font-style: bold;
+}
+h3{
+color:green;
+background-color:lightcyan;
+font-size:15pt;
+font-family: 'Times New Roman';
+font-style: bold;
+}
+</style>
+<h1><marquee>Welcome to BRAINTRAIN!!!</marquee></h1>
+<link rel="stylesheet" type="text/css" href="Registration.css" >
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<style>#h2,#divs{text-align:center;}</style>
+</head>
+<h3>
+<body Style="font-family:Segoe UI Symbol;">
+
+<div id="header">
+<img src="Braintrainlogo.jpg" style="height:140px;width:140px" alt="BrianTrainLogo" align="left">
+<h2 id="h2" align="left">Registration Form </h2> 
+ </div>
+<form 
+class="form" action="RegistrationServlet" method="post">
+<table class="table" align="center">
+<tr>
+<td >Name:  
+</td>
+<td><input type="text" name="nameText" value="" size="22.5" required/></td>
+</tr>
+<tr>
+<td><label class="label" >Age:</label></td>
+<td><input type="text" name="ageText" value="" size="22.5" required/></td>
+</tr>
+<tr><td>
+Address:
+</td>
+<td><textarea name="addressText" rows=5 cols=20 style="width:42.5" ></textarea>
+</td></tr>
+<tr><td><label for="contactDetails"><br>Contact Details:</label></tr>
+<tr><td><br>
+ Email_ID:  
+ </td>
+ <td><br><input type="text" name="emailIdText" value="" size="22.5"  required/></td>
+<tr><td>Phone_Number:</td>
+ <td><input type="text" name="phoneText" value="" size="22.5"/></tr> 
+<tr>
+<td>Qualification: </td>
+<td>
+<select name="qualification">
+<option value="select">select</option>
+<option value="Btech">B.Tech</option>
+<option value="B.com">B.com</option>
+<option value="B.sc">B.sc</option>
+<option value="Mtech">M.Tech</option>
+<option value="Ms">MS</option>
+<option value="MCA">MCA</option>
+</select>
+</td>
+</tr>
+   <tr><td>Choose Topic:</td>
+<td>
+<select name="topic">
+<option value="select">select</option>
+<option value="JAVA">JAVA</option>
+<option value="J2EE">J2EE</option>
+<option value="HYBERNATE">HYBERNATE</option>
+<option value="SPRING">SPRING</option>
+</select>
+   </td>
+ </tr>
+ <tr><td><br>
+ <input type="submit"  value="Register" name="RegistrationButton"/></td></tr>
+ </table>
+ </form>
+ <fieldset><legend color:royalblue>Sponsored by:</legend>
+   <img src="reebok.png" style="height:100px;width:240px;float:left;" alt="sponsor1" class="sponsor">
+   <img src="sony.png" style="height:100px;width:240px;float:left;" alt="sponsor2" class="sponsor"></fieldset>
+</body></h3>
+</html>
